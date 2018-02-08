@@ -1,0 +1,2 @@
+# thaiwseg
+Thai word segmentation
