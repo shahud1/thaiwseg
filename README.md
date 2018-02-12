@@ -5,8 +5,11 @@ Thaiwseg is word segmentation which based on Thai language, the project of a gro
 
 # Requirement
 Python 3.0 ++
+
 Google Translate API
+
 Fuzzywuzzy
+
 Django
 
 # Coding Section
@@ -17,4 +20,5 @@ from mtranslate.core import translate
 
 # Reference
 [Thai Dictionary](https://github.com/pureexe/thai-wordlist)
+
 [Translate/core](https://www.npmjs.com/package/@ngx-translate/core)
