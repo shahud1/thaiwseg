@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '_=y04tvh4&y%p-7tl@rtecc#szaiz_5x&a@2ees-3+%td_3tl-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
@@ -119,4 +119,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT ='/Users/boycatbay/Desktop/GitHub/thaiwseg/TMPWS/static'
+STATICFILES_DIRS = '/Users/boycatbay/Desktop/GitHub/thaiwseg/TMPWS/segment/static',
