@@ -12,6 +12,17 @@ Fuzzywuzzy
 
 Django
 
+# Install instructions
+
+You could either (1) Create a virtual machine using virtualenv ( pip install virtualenv ) and run the whole project in a virtual environment or (2) install Anaconda python and run it.
+
+
+Also, install these repositories:
+
+pip install cutkum
+pip install deepcut  (requires Keras)
+pip install mtranslate   (already inside the project folder)
+
 # Coding Section
 
 from mtranslate.core import translate
