@@ -1,7 +1,7 @@
 import time
 from mtranslate.core import translate
 
-filed = open('thaidict.txt', 'r',  encoding="utf-8")
+filed = open('wn-data-tha.txt', 'r',  encoding="utf-8")
 file = open('thai.txt', 'r',  encoding="utf-8")
 textd = filed.read()
 text = file.read()
@@ -13,8 +13,10 @@ fstring = ''
 duplicate = ''
 tran = text
 tran = translate(tran,"en","th")
+tran2 = translate(tran,"zh","en")
 print("The Original text/sentences:" ,text)
 print("The Google translation :" ,tran)
+print("The Google translation :" ,tran2)
 print("\n")
 print("******* SHORTEST TERM METHOD *********")
 for i in range(0,length):
@@ -36,7 +38,6 @@ for i in range(0,len(words)):
     if words[i] in text:
         #print (words[i])
         searchterms = searchterms + ' ' + words[i]
-    
 print(searchterms)
 print("\n")
 print("******* NEW METHOD ( LONGEST ) *********")
@@ -47,7 +48,8 @@ for i in range(0,len(words)):
         if words[i] + st[j] in text:
             lt = (words[i] + st[j])
             print ((lt + '-' + translate(lt,"en","th")),end=' , ')
-            ltt = lt + ' ' + ltt
+            print ((lt+'-'+translate(lt,"zh","en")),end=",")
+            ltt = lt + ' ' + lt
             
 print("\n")
 print("\n")
@@ -61,6 +63,8 @@ for i in range(0,len(ltt)):
             longest = ltt[i]
 
 print ("Longest Word is: ",translate(longest,"en","th") )
+print ("Longest Word is: ",translate(longest,"zh","en") )
+
 
 print("\n")
 print("******* WITHOUT REMOVING DUPLICATES *********")
@@ -72,7 +76,7 @@ def longestp(x):
         if(len(x[i]) > len(l)):
             l2 = x[i]
             l = l2
-    #print (l2)
+    print (l2)
     global l3
     l3 = l2
            
@@ -107,18 +111,17 @@ print("\n")
 print(" ******* REMOVING DUPLICATES ********* \n",longest3)
 for i in range(0,len(longest3)):
     print((translate(longest3[i],"en","th")),end=' | ')
-    
-
-
+    print((translate(longest3[i], "zh", "en")), end=' | ')
 
 print("\n")
 print("\n")
 print("\n")
-print("******* FILTERING FOR DUPLICATES & REMOVING BULLSHIT*********")
+print("******* FILTERING FOR DUPLICATES *********")
 
 y = searchterms.split()
 length = int (len(y)/2)
 d = ''
+
 
 for i in range(length):
     if (y.count(y[i]) != 1 ):
@@ -127,16 +130,16 @@ for i in range(length):
         
 print(" The Duplicated terms fixed are: ",d)
 print("\n")
-
 print(" Therefore the SEGMENTED words WITH ENG TRANSLATION are: ",y)
 print("\n")
 length = len(y)
 for i in range(length-1):
     print ((y[i] + '-' + translate(y[i],"en","th")),end=' , ')
-
+    print ((y[i] + '-' + translate(y[i],"zh","th")),end=' , ')
 
 filed.close()
 file.close()
+
 
 
 
