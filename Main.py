@@ -42,39 +42,43 @@ class our:
         duplicate = ''
         translatethis = x
 
-        listofwords = ''
-        for i in range(0,len(dicwordssplit)):
-            if dicwordssplit[i] in x:
-                listofwords = listofwords + ' ' + dicwordssplit[i]
-
+        listofwords = ''                                             
+        for i in range(0,len(dicwordssplit)):                        # This for loop splits the whole dictionary into word by word
+            if dicwordssplit[i] in x:                                # and checks whether everyword in the dictionary is present
+                listofwords = listofwords + ' ' + dicwordssplit[i]   # in the input sentence. If it finds any, it adds those words in to
+                                                                     # the variable list of words
         mix = listofwords.split()
+        
         #
         st = ''
         
-        for i in range(len(x)):
-            for j in range(len(mix)):
-                if mix[j][0] == x[i]:
+        for i in range(len(x)):                                      # This for loop checks if the first letter of every word in the mix var
+            for j in range(len(mix)):                                # matches the first letter of all words in the input. If it finds any it
+                if mix[j][0] == x[i]:                                # adds the word in to variable st
                     st = st + ' ' + mix[j]
         st=st.split()
+        
         #
         st2=''
-        for i in range(len(st)):
-            if len(st[i])>1:
+        for i in range(len(st)):                                     # This for loop checks if all the words in st are length 1 and above. This
+            if len(st[i])>1:                                         # is to eliminate any single letters.
                 st2 = st2 + ' ' + st[i]
         st=st2
         st=st.split()
+        
         #
         s = x
         k = ''
-        for i in range(len(st)):
-                if st[i]  in s:
-                    k = k + '|' + st[i]
+        for i in range(len(st)):                                     # This for loop checks if any words of st are in the input sentence. If it
+                if st[i]  in s:                                      # finds any, it will remove the word from the input sentence and also add 
+                    k = k + '|' + st[i]                              # that word into a variable k. 
                     s = s.replace(st[i],'')
+                    
         #
         srest = ''
         s = s.split()
-        if len(s)!=0:
-            for i in range(len(s)):
+        if len(s)!=0:                                                # srest if the words that were present in input text not found in dictinary.
+            for i in range(len(s)):                                  # these words are printed the last
                 srest = srest + '|' + s[i]
         return (k+srest)
 
