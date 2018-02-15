@@ -111,7 +111,18 @@ print("\n")
 print(" ******* REMOVING DUPLICATES ********* \n",longest3)
 for i in range(0,len(longest3)):
     print((translate(longest3[i],"en","th")),end=' | ')
+<<<<<<< HEAD
     print((translate(longest3[i], "zh", "en")), end=' | ')
+=======
+
+print("\n")
+print("######### 12 feb 2018 ##########")
+print("\n")
+
+    
+
+
+>>>>>>> b5457b4f7a9b41c52627f71b52dd857619e31db1
 
 print("\n")
 print("\n")
