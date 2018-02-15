@@ -32,14 +32,14 @@ pip install mtranslate   (already inside the project folder)
 from mtranslate.core import translate
 
 # Reference
-[Flask][http://flask.pocoo.org]
+[Flask](http://flask.pocoo.org)
 
-[Thai Dictionary][https://github.com/pureexe/thai-wordlist]
+[Thai Dictionary](https://github.com/pureexe/thai-wordlist)
 
-[mTranslate/core][https://www.npmjs.com/package/@ngx-translate/core]
+[mTranslate/core](https://www.npmjs.com/package/@ngx-translate/core)
 
-[DeepCut][https://github.com/rkcosmos/deepcut]
+[DeepCut](https://github.com/rkcosmos/deepcut)
 
-[CutKum][https://github.com/pucktada/cutkum]
+[CutKum](https://github.com/pucktada/cutkum)
 
-[FuzzyWuzzy][https://github.com/seatgeek/fuzzywuzzy]
+[FuzzyWuzzy](https://github.com/seatgeek/fuzzywuzzy)
