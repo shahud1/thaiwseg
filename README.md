@@ -1,7 +1,7 @@
 # thaiwseg
 Thaiwseg is word segmentation which based on Thai language, the project of a group of SIIT. We've tried to experiment and play around with the Thai language with using Python,Thai Dictionary and,Google translate. We created an algorithm to divide the text input into word segment.
 
-*what we're developing right now is trying to improve the accurracy of diving and create web interface with Flask in order to runs on web server and also to see the process and compare our result with github project like "Cutkum" and "Deep cut"
+* What we're developing right now: Improving the accurracy of diving and creating web interface with Flask in order to run it on a web server. Also comparing our result with github projects like "Cutkum" and "Deep cut"
 
 # Requirement
 Python 3.0 ++
@@ -16,16 +16,22 @@ Fuzzywuzzy
 
 Flask
 
-# Install instructions
+# Detailed Install instructions
 
-You could either (1) Create a virtual machine using virtualenv ( pip install virtualenv ) and run the whole project in a virtual environment or (2) install Anaconda python and run it.
-
+Create a virtual machine using virtualenv ( pip install virtualenv ) and run the whole project in a virtual environment 
 
 Also, install these repositories:
 
-pip install cutkum
-pip install deepcut  (requires Keras)
-pip install mtranslate   (already inside the project folder)
+1 pip install cutkum
+2 pip install deepcut  and pip install docker
+3 pip install mtranslate   
+4 pip install fuzzywuzzy
+
+- Easiest way to install is by creating a virtual environment. Install all the repositories above only when the virtualenv have been activated.
+- If Cutkum cannot find 'lstm.l6.d2.pb' , download and copy it to 'virtualenv/model/' directory.
+- Copy the Main.py and thaidict.txt to the 'virtualenv/' directory.
+- To run the file, open Terminal and move to the 'virtualenv/' directory. Then activate using 'source bin/activate' command. After that run Python3 and type the necessary command.
+
 
 # Coding Section
 
