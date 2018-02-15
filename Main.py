@@ -82,7 +82,6 @@ class our:
                 
 
 class ending:
-    
     def flow(x):
         print("Cutkum: ",other.cutkumize(x))
         print("Deepcut: ",other.deepcutize(x))
