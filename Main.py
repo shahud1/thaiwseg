@@ -6,7 +6,10 @@ from fuzzywuzzy import process
 from mtranslate.core import translate
 from pythainlp import *
 from pythainlp.tokenize import word_tokenize
+<<<<<<< HEAD
 
+=======
+>>>>>>> e599361d12ecfead14df89b93dcb32afd57c1f31
 
 class intro:
 
@@ -96,7 +99,14 @@ class our:
 
 class ending:
     def flow(x):
+<<<<<<< HEAD
         print("Cutkum: ", other.cutkumize(x))
         print("Deepcut: ", other.deepcutize(x))
         print("PyThaiNLP: ", other.pythaize(x))
         print("Ourcut: ", our.ourmethodize(x))
+=======
+        print("Cutkum: ",other.cutkumize(x))
+        print("Deepcut: ",other.deepcutize(x))
+        print("PyThaiNLP: ",other.pythaize(x))
+        print("Ourcut: ",our.ourmethodize(x))
+>>>>>>> e599361d12ecfead14df89b93dcb32afd57c1f31
