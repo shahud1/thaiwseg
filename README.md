@@ -49,3 +49,9 @@ from mtranslate.core import translate
 [CutKum](https://github.com/pucktada/cutkum)
 
 [FuzzyWuzzy](https://github.com/seatgeek/fuzzywuzzy)
+
+
+
+# Contributers 
+* Punchok Kerdsiri -  https://github.com/punch872
+* boycatbay - https://github.com/boycatbay
