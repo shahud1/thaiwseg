@@ -96,5 +96,5 @@ class ending:
     def flow(x):
         print("Cutkum: ",other.cutkumize(x))
         print("Deepcut: ",other.deepcutize(x))
-        print("PyThaiNLP: ",our.pythaize(x))
+        print("PyThaiNLP: ",other.pythaize(x))
         print("Ourcut: ",our.ourmethodize(x))
