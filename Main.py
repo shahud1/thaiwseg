@@ -4,6 +4,8 @@ import deepcut
 from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
 from mtranslate.core import translate
+from pythainlp import *
+from pythainlp.tokenize import word_tokenize
 
 class intro:
     
@@ -23,6 +25,11 @@ class other:
     def deepcutize(x):
         words = deepcut.tokenize(x)
         return words
+
+    def pythaize(x):
+        words = word_tokenize(x)
+        return words
+
 
 class our:
     def ourmethodize(x):
@@ -89,11 +96,5 @@ class ending:
     def flow(x):
         print("Cutkum: ",other.cutkumize(x))
         print("Deepcut: ",other.deepcutize(x))
+        print("PyThaiNLP: ",our.pythaize(x))
         print("Ourcut: ",our.ourmethodize(x))
-
-        
-        
-
-
-
-    
