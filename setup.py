@@ -1,20 +1,23 @@
 
-from distutils.core import setup
+from setuptools import setup
 
+REQUIRED_PACKAGES = ['virtualenv','cutkum','deepcut','docker','mtranslate','fuzzywuzzy']
+
+def readme():
+    with open('README.md') as f:
+        return f.read()
 setup(
-    name = 'mtranslate',
-    packages = ['mtranslate'],
-    version = '1.6',
-    description = 'Google translate console script with easy to use API',
-    author = 'Arnaud Alies',
-    author_email = 'arnaudalies.py@gmail.com',
-    url = 'https://github.com/mouuff/mtranslate',
-    download_url = 'https://github.com/mouuff/mtranslate/tarball/1.6',
-    keywords = ['console', 'translate', 'translator', 'simple', 'google', 'language'],
-    classifiers = [],
-    entry_points={
-          'console_scripts': [
-              'mtranslate = mtranslate.__main__:main'
-          ]
-      },
+    name = 'thaiwseg',
+    packages=['thaiwseg'],
+    include_package_data=True,
+    version = '0.9',
+    install_requires=REQUIRED_PACKAGES,
+    description = 'Advance Thai Word Segmentation',
+    long_description = readme(),
+    url = 'https://github.com/shahud1/thaiwseg.git',
+    author = 'Shahud',
+    author_email = 'patiphan_pinkeaw@hotmail.com',
+    download_url = 'https://github.com/shahud1/thaiwseg.git/archive/0.1.tar.gz',
+    keywords = ['thai', 'word degment', 'NLP', 'Advance Thai Word Segmentation'],
+    classifiers = [ 'Development Status :: Beta'],
 )
