@@ -12,6 +12,7 @@ setup(
     include_package_data=True,
     version = '0.9',
     install_requires=REQUIRED_PACKAGES,
+    license='MIT',
     description = 'Advance Thai Word Segmentation',
     long_description = readme(),
     url = 'https://github.com/shahud1/thaiwseg.git',
