@@ -26,7 +26,7 @@ class Application(Frame):
         self.text1.grid(row=3,column=0,columnspan =2 ,sticky=W)
 
         #Create TextBox2 for cutkum output
-        self.cutkum = Label(self,text="CutKum")
+        self.cutkum = Label(self,text="pythaize")
         self.cutkum.grid(row=4,column=0,columnspan =2 ,sticky=W)
         self.text2 = Text(self,width=35,height=2,wrap =WORD)
         self.text2.grid(row=5,column=0,columnspan =2 ,sticky=W)
@@ -37,7 +37,7 @@ class Application(Frame):
         self.text3 = Text(self, width=35, height=2, wrap=WORD)
         self.text3.grid(row=7, column=0, columnspan=2, sticky=W)
 
-        # Create TextBox4 for ATS output
+        # Create TextBox4 for TAS output
         self.ats = Label(self, text="Thai Advance segmentator")
         self.ats.grid(row=8, column=0, columnspan=2, sticky=W)
         self.text4 = Text(self, width=35, height=2, wrap=WORD)
@@ -56,16 +56,16 @@ class Application(Frame):
             #return trnaslation
             self.text1.delete(0.0, END)
             self.text1.insert(0.0,intro.translations(content))
-            #return cutkum
+            #return pythize
             self.text2.delete(0.0,END)
-            self.text2.insert(0.0,other.cutkumize(content))
+            self.text2.insert(0.0,other.pythaize(content))
             #return deepcut
             self.text3.delete(0.0, END)
             self.text3.insert(0.0, other.deepcutize(content))
-            #return ATS
+            #return TAS
             self.text4.delete(0.0, END)
             self.text4.insert(0.0, our.ourmethodize(content))
-            # return ATS
+            # return all
             self.text5.delete(0.0, END)
             self.text5.insert(0.0, ending.flow(content))
         else:

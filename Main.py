@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*
-from cutkum.tokenizer import Cutkum
 import deepcut
 from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
 from mtranslate.core import translate
+from pythainlp import *
 
 class intro:
 
@@ -16,11 +16,6 @@ class intro:
 
 class other:
 
-    def cutkumize(x):
-        ck = Cutkum('lstm.l6.d2.pb')
-        words = ck.tokenize(x)
-        return words
-
     def deepcutize(x):
         words = deepcut.tokenize(x)
         return words
@@ -32,9 +27,14 @@ class other:
 
 class our:
     def ourmethodize(x):
+        from fuzzywuzzy import fuzz
+        from fuzzywuzzy import process
+        import time
+        from mtranslate.core import translate
+        from datetime import datetime
         thaidictfile = open('thaidict.txt', 'r', encoding="utf-8")  # Opening the dictionary file
         thaidf = thaidictfile.read()  # Reading the dictionary file
-        #  Reading the input file
+        texttf = x  # Reading the input file
         dicwordssplit = thaidf.split()  # Making all the words in the dictionary as individual strings
         inputwordsplit = x.split()  # Making the whole input in the input file as individual strings
         lengthinput = len(x)  # The length of all the letters in dictionary
@@ -90,7 +90,7 @@ class our:
 class ending:
     def flow(x):
         s="\n"
-        cut=("Cutkum: ", other.cutkumize(x))
+        cut=("pythize: ", other.pythaize(x))
         deep=("Deepcut: ", other.deepcutize(x))
         py=("PyThaiNLP: ", other.pythaize(x))
         tas=("Ourcut: ",our.ourmethodize(x))
