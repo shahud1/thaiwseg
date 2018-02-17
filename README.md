@@ -29,16 +29,16 @@ Also, install these repositories:
 pip install cutkum
 ```
 ```python
-* pip install deepcut  and pip install docker
+pip install deepcut  and pip install docker
 ```
 ```python
-* pip install pythainlp
+pip install pythainlp
 ```
 ```python
-* pip install mtranslate   
+pip install mtranslate   
 ```
 ```python
-* pip install fuzzywuzzy
+pip install fuzzywuzzy
 ```
 
 - Easiest way to install is by creating a virtual environment. Install all the repositories above only when the virtualenv have been activated.
@@ -56,9 +56,14 @@ pip install cutkum
 
 
 # Coding Section
-This part shows what module is need for 
+how to import each modules
 ```python
 from mtranslate.core import translate
+import deepcut
+from fuzzywuzzy import fuzz
+from fuzzywuzzy import process
+from mtranslate.core import translate
+from pythainlp import *
 ```
 
 # Reference
@@ -66,7 +71,7 @@ from mtranslate.core import translate
 
 [Thai Dictionary](https://github.com/pureexe/thai-wordlist)
 
-[mTranslate/core](https://www.npmjs.com/package/@ngx-translate/core)
+[mTranslate](https://www.npmjs.com/package/@ngx-translate/core)
 
 [DeepCut](https://github.com/rkcosmos/deepcut)
 
