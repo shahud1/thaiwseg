@@ -59,7 +59,7 @@ pip install cutkum
 This part shows what module is need for 
 ```python
 from mtranslate.core import translate
-``
+```
 
 # Reference
 [Flask](http://flask.pocoo.org)
