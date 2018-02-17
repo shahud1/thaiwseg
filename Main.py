@@ -89,18 +89,9 @@ class dictmethod:
 
 class ending:
     def flow(x):
-<<<<<<< HEAD
         deep = ("Deepcut: ", other.deepcutize(x))
         py = ("PyThaiNLP: ", other.pythaize(x))
         tas = ("Dictionary Method: ", dictmethod.methodize(x))
         s = "\n"
         li=[deep,s,py,s,tas]
         return li[0:]
-=======
-        s="\n"
-        cut=("pythize: ", other.pythaize(x))
-        deep=("Deepcut: ", other.deepcutize(x))
-        py=("PyThaiNLP: ", other.pythaize(x))
-        tas=("Ourcut: ",our.ourmethodize(x))
-        return cut,s,deep,s,py,tas
->>>>>>> dcbd810b59a0341dc4de1bdabd33bbc244f0396e
