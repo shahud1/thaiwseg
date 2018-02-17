@@ -6,7 +6,7 @@ from mtranslate.core import translate
 from pythainlp import *
 
 class intro:
-
+    
     def translations(x):
         s="\n"
         T = ["Original text/sentences: ", x]  # Original Sentence
