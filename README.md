@@ -10,6 +10,8 @@ CutKum
 
 Deepcut
 
+Pythainlp
+
 mTranslate
 
 Fuzzywuzzy
@@ -24,6 +26,7 @@ Also, install these repositories:
 
 * pip install cutkum
 * pip install deepcut  and pip install docker
+* pip install pythainlp
 * pip install mtranslate   
 * pip install fuzzywuzzy
 
@@ -34,11 +37,11 @@ Also, install these repositories:
 - To run the file, open Terminal and move to the 'virtualenv/' directory. Then activate using 'source bin/activate' command. After that run python3 and type the necessary command.
 - In the above mentioned directory type: python3 Real_gui.py and run it!
 - After the GUI successfully loads type in the Thai sentence and press enter.
+- IF YOU HAVE ANY ISSUES RUNNING THE FILE PLEASE RAISE AN ISSUE
 
+# Installation video:
 
-# Installation with pictures
-Image is:
-(https://preview.ibb.co/jBkhi7/Screen_Shot_2561_02_17_at_20_02_58.png)
+ https://www.youtube.com/watch?v=iDxvAWlIR-w
 
 
 # Coding Section
