@@ -1,7 +1,7 @@
 # thaiwseg
 Thaiwseg is word segmentation which based on Thai language, the project of a group of SIIT. We've tried to experiment and play around with the Thai language with using Python,Thai Dictionary and,Google translate. We created an algorithm to divide the text input into word segment.
 
-* What we're developing right now: Improving the accurracy of diving and creating web interface with Flask in order to run it on a web server. Also comparing our result with github projects like "Cutkum" and "Deep cut"
+* What we're developing right now: Improving the accurracy of diving and creating web interface with Flask in order to run it on a web server. Also comparing our result with github projects like "Cutkum" and "Deepcut"
 
 # Requirement
 Python 3.0 ++
@@ -22,10 +22,10 @@ Create a virtual machine using virtualenv ( pip install virtualenv ) and run the
 
 Also, install these repositories:
 
-1 pip install cutkum
-2 pip install deepcut  and pip install docker
-3 pip install mtranslate   
-4 pip install fuzzywuzzy
+* pip install cutkum
+* pip install deepcut  and pip install docker
+* pip install mtranslate   
+* pip install fuzzywuzzy
 
 - Easiest way to install is by creating a virtual environment. Install all the repositories above only when the virtualenv have been activated.
 - If Cutkum cannot find 'lstm.l6.d2.pb' , download and copy it to 'virtualenv/model/' directory.
@@ -49,3 +49,9 @@ from mtranslate.core import translate
 [CutKum](https://github.com/pucktada/cutkum)
 
 [FuzzyWuzzy](https://github.com/seatgeek/fuzzywuzzy)
+
+
+
+# Contributers 
+* Punchok Kerdsiri -  https://github.com/punch872
+* boycatbay - https://github.com/boycatbay
