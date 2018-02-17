@@ -4,20 +4,15 @@ import deepcut
 from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
 from mtranslate.core import translate
-from pythainlp import *
-from pythainlp.tokenize import word_tokenize
-<<<<<<< HEAD
-
-=======
->>>>>>> e599361d12ecfead14df89b93dcb32afd57c1f31
 
 class intro:
 
     def translations(x):
-        T = print("Original text/sentences: ", x)  # Original Sentence
-        OTE = print("Thai translation : ", translate(x, "en", "th"))  # English Translation of original
-        OTC = print("Chinese translation : ", translate(x, "zh", "th"))  # Chinese Translation of original
-
+        s="\n"
+        T = ["Original text/sentences: ", x]  # Original Sentence
+        OTE = ["Thai translation : ", translate(x, "en", "th")]  # English Translation of original
+        OTC = ["Chinese translation : ", translate(x, "zh", "th")]  # Chinese Translation of original
+        return T,s,OTE,s,OTC
 
 class other:
 
@@ -37,14 +32,9 @@ class other:
 
 class our:
     def ourmethodize(x):
-        from fuzzywuzzy import fuzz
-        from fuzzywuzzy import process
-        import time
-        from mtranslate.core import translate
-        from datetime import datetime
         thaidictfile = open('thaidict.txt', 'r', encoding="utf-8")  # Opening the dictionary file
         thaidf = thaidictfile.read()  # Reading the dictionary file
-        texttf = x  # Reading the input file
+        #  Reading the input file
         dicwordssplit = thaidf.split()  # Making all the words in the dictionary as individual strings
         inputwordsplit = x.split()  # Making the whole input in the input file as individual strings
         lengthinput = len(x)  # The length of all the letters in dictionary
@@ -99,14 +89,9 @@ class our:
 
 class ending:
     def flow(x):
-<<<<<<< HEAD
-        print("Cutkum: ", other.cutkumize(x))
-        print("Deepcut: ", other.deepcutize(x))
-        print("PyThaiNLP: ", other.pythaize(x))
-        print("Ourcut: ", our.ourmethodize(x))
-=======
-        print("Cutkum: ",other.cutkumize(x))
-        print("Deepcut: ",other.deepcutize(x))
-        print("PyThaiNLP: ",other.pythaize(x))
-        print("Ourcut: ",our.ourmethodize(x))
->>>>>>> e599361d12ecfead14df89b93dcb32afd57c1f31
+        s="\n"
+        cut=("Cutkum: ", other.cutkumize(x))
+        deep=("Deepcut: ", other.deepcutize(x))
+        py=("PyThaiNLP: ", other.pythaize(x))
+        tas=("Ourcut: ",our.ourmethodize(x))
+        return cut,s,deep,s,py,tas

@@ -52,7 +52,7 @@ class Application(Frame):
     def output(self):
         ## Display message base on the pasword typed in
         content = self.word.get()
-        if isinstance(content,str):
+        if content:
             #return trnaslation
             self.text1.delete(0.0, END)
             self.text1.insert(0.0,intro.translations(content))
