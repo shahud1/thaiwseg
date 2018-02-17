@@ -27,8 +27,9 @@ Flask
 Create a virtual machine using virtualenv ( pip install virtualenv ) and run the whole project in a virtual environment 
 
 Also, install these repositories:
-
-* pip install cutkum
+'''python
+pip install cutkum
+'''python
 * pip install deepcut  and pip install docker
 * pip install pythainlp
 * pip install mtranslate   
