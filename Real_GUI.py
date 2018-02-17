@@ -20,7 +20,7 @@ class Application(Frame):
         self.submit_button.grid(row=1, column =1 )
 
         #Create Textbox1 for Translation output
-        self.translate = Label(self,text="Translate to English],Chinese")
+        self.translate = Label(self,text="Translate to English,Chinese")
         self.translate.grid(row=2,column=0,sticky =W)
         self.text1 = Text(self,width=35,height=5,wrap =WORD)
         self.text1.grid(row=3,column=0,columnspan =2 ,sticky=W)
@@ -38,7 +38,7 @@ class Application(Frame):
         self.text3.grid(row=7, column=0, columnspan=2, sticky=W)
 
         # Create TextBox4 for TAS output
-        self.ats = Label(self, text="Thai Advance segmentator")
+        self.ats = Label(self, text="Dictionary Method")
         self.ats.grid(row=8, column=0, columnspan=2, sticky=W)
         self.text4 = Text(self, width=35, height=2, wrap=WORD)
         self.text4.grid(row=9, column=0, columnspan=2, sticky=W)
@@ -64,7 +64,7 @@ class Application(Frame):
             self.text3.insert(0.0, other.deepcutize(content))
             #return TAS
             self.text4.delete(0.0, END)
-            self.text4.insert(0.0, our.ourmethodize(content))
+            self.text4.insert(0.0, dictmethod.methodize(content))
             # return all
             self.text5.delete(0.0, END)
             self.text5.insert(0.0, ending.flow(content))

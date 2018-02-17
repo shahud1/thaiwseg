@@ -25,8 +25,8 @@ class other:
         return words
 
 
-class our:
-    def ourmethodize(x):
+class dictmethod:
+    def methodize(x):
         from fuzzywuzzy import fuzz
         from fuzzywuzzy import process
         import time
@@ -89,9 +89,9 @@ class our:
 
 class ending:
     def flow(x):
-        s="\n"
-        cut=("pythize: ", other.pythaize(x))
-        deep=("Deepcut: ", other.deepcutize(x))
-        py=("PyThaiNLP: ", other.pythaize(x))
-        tas=("Ourcut: ",our.ourmethodize(x))
-        return cut,s,deep,s,py,tas
+        deep = ("Deepcut: ", other.deepcutize(x))
+        py = ("PyThaiNLP: ", other.pythaize(x))
+        tas = ("Dictionary Method: ", dictmethod.methodize(x))
+        s = "\n"
+        li=[deep,s,py,s,tas]
+        return li[0:]
