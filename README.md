@@ -1,7 +1,11 @@
 # thaiwseg
 Thaiwseg is word segmentation which based on Thai language, the project of a group of SIIT. We've tried to experiment and play around with the Thai language with using Python,Thai Dictionary and,Google translate. We created an algorithm to divide the text input into word segment.
 
-* What we're developing right now: Improving the accurracy of diving and creating web interface with Flask in order to run it on a web server. Also comparing our result with github projects like "Cutkum" and "Deepcut"
+We noticed several methods of achieving this task across the internet and came up with the conclusion that Machine learning methods out perform any 'Stand alone Python' algorithm. Thai Language is far too complex than matching words from the dictionary for segmentation.
+
+In this version (v0.9) we compared the top performing methods like Deepcut, Cutkum (coming in v1.0),PythaiNlp with a python algorithm based word segmenter. 
+
+In the future versions we plan to implement a Machine learning algorithm (using Tensorflow).
 
 # Requirement
 Python 3.0 ++
