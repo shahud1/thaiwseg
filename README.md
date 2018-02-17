@@ -28,9 +28,17 @@ Also, install these repositories:
 * pip install fuzzywuzzy
 
 - Easiest way to install is by creating a virtual environment. Install all the repositories above only when the virtualenv have been activated.
+- Download the whole git folder as zip and unzip the files inside the virtual environment folder that you created.
 - If Cutkum cannot find 'lstm.l6.d2.pb' , download and copy it to 'virtualenv/model/' directory.
-- Copy the Main.py and thaidict.txt to the 'virtualenv/' directory.
-- To run the file, open Terminal and move to the 'virtualenv/' directory. Then activate using 'source bin/activate' command. After that run Python3 and type the necessary command.
+- Copy the Main.py and thaidict.txt to the 'virtualenv/' directory. [ make sure both files are in the same Dir ]
+- To run the file, open Terminal and move to the 'virtualenv/' directory. Then activate using 'source bin/activate' command. After that run python3 and type the necessary command.
+- In the above mentioned directory type: python3 Real_gui.py and run it!
+- After the GUI successfully loads type in the Thai sentence and press enter.
+
+
+# Installation with pictures
+Image is:
+(https://preview.ibb.co/jBkhi7/Screen_Shot_2561_02_17_at_20_02_58.png)
 
 
 # Coding Section
