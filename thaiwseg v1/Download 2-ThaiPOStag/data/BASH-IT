@@ -1,0 +1,6 @@
+#!/bin/bash
+python3 /Users/shahud/PycharmProjects/ProjectPOS/data/intro.py
+python3 /Users/shahud/PycharmProjects/ProjectPOS/data/Wordseg.py
+cd /Users/shahud/PycharmProjects/ProjectPOS/pSCRDRtagger/
+python2 RDRPOSTagger.py tag ../data/Thai.RDR ../data/Thai.DICT ../data/segmentedtext
+gedit /Users/shahud/PycharmProjects/ProjectPOS/data/segmentedtext.TAGGED

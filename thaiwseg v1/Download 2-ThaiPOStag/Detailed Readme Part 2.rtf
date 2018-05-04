@@ -1,0 +1,103 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\csgray\c0;\csgray\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww8080\viewh15040\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Hey! You made it to the second part! Welcome!\
+PLEASE FOLLOW ALONG WITH ME.. (Python 2.X) and (Python 3.X) \
+\
+* Download 2-ThaiPOStag folder using browser by visiting the link\
+* First, goto your desktop and make a folder named: \'93
+\b testthaipostag\'94
+\b0  \
+* Open Terminal and goto Desktop by typing (assuming you are at Home directory):\
+  
+\b cd Desktop
+\b0 \
+* Goto the new folder that you made a while ago\
+  
+\b cd testthaipostag
+\b0 \
+* Great! Now it is time to install the virtual environment to that folder(We do this because MacOS can interfere with many libraries) Yes again! :D\
+To do this type: \
+  
+\b virtualenv venv
+\b0 \
+* After it is installed, type the following command to get in the folder:\
+  
+\b cd venv\
+* 
+\b0 Copy all the down content from \'93Download 2-ThaiPOStag \'94 in to venv folder \
+* Open the \ul data\ulnone  folder and open the \ul Inputtext\ulnone  file and type/copy the thai sentence/paragraphs that you want to POS tag!\
+* Now it\'92s time to activate it! Type:\
+  
+\b source bin/activate
+\b0 \
+* Excellent Job! Now it\'92s time to install all dependent packages. On the same terminal as before type the following commands in this order:\
+1)
+\b  pip install deepcut\
+
+\b0 2)
+\b  pip install tensorflow\
+
+\b0 3)
+\b  pip install pythainlp\
+
+\b0 \
+Everything installed? Awesome! (If not please send me an email with the issue)\
+\
+### QUICK TIP: STAY ALERT! THIS STEP IS TRICKY! ###\
+\
+* The next command might be different in your PC. THIS MUST BE DONE IN THE SAME \ul TERMINAL \ulnone THAT YOU USED TO RUN THE PREVIOUS COMMANDS. Basically, you type \
+\
+python3   [/Users/[yourusername]\cf2 \cb3 \CocoaLigature0 /Desktop/testthaipostag/venv/data/Wordseg.py\
+\cf0 \cb1 \CocoaLigature1 * \cf2 \cb3 \CocoaLigature0 So in my Computer the command is:\cf0 \cb1 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\b \cf2 \cb3 \CocoaLigature0 python3 /Users/shahud/Desktop/testthaipostag/venv/data/Wordseg.py
+\b0 \cf0 \cb1 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+* Very good! The above command converts your text in the \ul Inputtext\ulnone  in to PyThaiNLP word segmented words and save it on a file called \ul segmentedtext\ulnone , to make it ready for the next step.\
+\
+* Next type this command to goto the \ul pSCRDRtagg\ulnone  to run the algorithm that will Tag the \ul segmentedtext\ulnone  file generated in the previous step\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\b \cf2 \cb3 \CocoaLigature0 cd /Users/shahud/Desktop/testthaipostag/venv/pSCRDRtagger/\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\b0 \cf0 \cb1 \CocoaLigature1 *  OK! Now to run the POS tagging algorithm! Just type: [ MAKE SURE ITS PYTHON2 ]\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\b \cf2 \cb3 \CocoaLigature0 python2 RDRPOSTagger.py tag ../data/Thai.RDR ../data/Thai.DICT ../data/segmentedtext\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\b0 \cf0 \cb1 \CocoaLigature1 *  \cf2 \cb3 \CocoaLigature0 After it is done it will show 
+\b \'93
+\b0 Output file: ../data/segmentedtext.TAGGED \'93. \
+\cf0 \cb1 \CocoaLigature1 *  \cf2 \cb3 \CocoaLigature0 If it doesn\'92t show it that means there was an error. Make sure you don\'92t have any unsupported characters in your Inputtext file.(unsupported characters known to date: \'93 \'93 \'91 \'91 ) \
+\cf0 \cb1 \CocoaLigature1 *  \cf2 \cb3 \CocoaLigature0 YAHOO!! You\'92ve done it! Just goto the data folder and open the \ul segmentedtext.TAGGED\ulnone  document! \
+\cf0 \cb1 \CocoaLigature1 *  \cf2 \cb3 \CocoaLigature0 Cannot understand what the Tag means? Need not worry! Our Professor wrote a Paper explaining what eat tag means. Phew! \
+You can see it here: {\field{\*\fldinst{HYPERLINK "https://www.researchgate.net/publication/243783378_Thai_Part-of-speech_Tagged_Corpus_ORCHID"}}{\fldrslt https://www.researchgate.net/publication/243783378_Thai_Part-of-speech_Tagged_Corpus_ORCHID}}\
+\
+\cf0 \cb1 \CocoaLigature1 * Tired doing it again and again to test every time?  We know its a lot of steps! We created a Script file called BASH-IT. It is in the data directory! You just have to change the location of your files according to your computer! After that you just have to input the text to the Inputtext file and run the BASH-IT! One click! And the output file (segmentedtext.TAGGED) will be updated and also will be opened for you! ( You need to install Gedit using Home-brew for Mac for this to work ). If you don\'92t want the automatic opening of the file just uncomment or remove the last line of the BASH-IT file and manually open the output file (segmentedtext.TAGGED) to see your result! :) It\'92s your choice!\
+\
+\cf2 \cb3 \CocoaLigature0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \cb1 \CocoaLigature1 \
+##### DID YOU KNOW? #####\
+- Group T10 had so much to show but due to the limited time we were able to show only a fraction of the whole.\
+- Group T10 is ready to do the presentation again and explain in detail if needed!\
+- This algorithm POS tags at 90k words/second. Whoa! That\'92s fast!\
+- Group T10 spent weeks for preparing and selection of the best algorithm for the best result! \
+#########################\
+}
